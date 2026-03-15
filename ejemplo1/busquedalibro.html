@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="utf-8" />
+ <title>...::: Formulario de búsqueda :::...</title>
+ <link rel="stylesheet" href="css/vertical-nav.css" />
+ <link rel="stylesheet" href="css/formoid-solid-purple.css" />
+ <link rel="stylesheet" href="css/links.css" />
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script type="text/javascript">
+ if(typeof jQuery === 'undefined') {
+ var e = document.createElement("script");
+ e.src = "js/modernizr.custom.lis.js";
+ document.getElementsByTagName("head")[0].appendChild(e);
+ }
+ </script>
+ </head>
+<body>
+<header>
+ <h1 class="3d-text">Búsqueda de libro</h1>
+</header>
+<section>
+<article>
+<form action="resultados.php" method="POST" class="formoid-solid-purple">
+ <div class="title">
+ <h2>Catálogo de búsqueda</h2>
+ </div>
+ <div class="element-select">
+ <label class="title"></label>
+ <div class="item-cont">
+ <div class="large">
+ <span>
+ <select name="tema">
+ <option value="autor">Autor</option>
+<option value="titulo">Título</option>
+<option value="isbn">ISBN</option>
+ </select>
+ <i></i>
+ <span class="icon-place"></span>
+ </span>
+ </div>
+ </div>
+ </div>
+ <div class="element-input">
+ <label class="title"></label>
+ <div class="item-cont">
+ <input type="text" name="termino" placeholder="Término de búsqueda"
+class="large" />
+ <span class="icon-place"></span>
+ </div>
+ </div>
+ <div class="element-checkbox">
+ <label class="title">Tipo de búsqueda:</label>
+ <div class="column column1">
+ <label>
+ <input type="checkbox" name="tipobusqueda" value="exacta" / >
+ <span>Búsqueda exacta</span>
+ </label>
+ </div>
+ <span class="clearfix"></span>
+ </div>
+ <div class="submit">
+ <input type="submit" name="enviar" value="Buscar" />
+ </div>
+</form>
+<script src="js/formoid-solid-purple.js"></script>
+<a href="menuopciones.html" class="a-btn">
+ <span class="a-btn-symbol">i</span>
+ <span class="a-btn-text">Regresar</span>
+ <span class="a-btn-slide-text">al menú</span>
+ <span class="a-btn-slide-icon"></span>
+</a>
+</article>
+</section>
+</body>
+</html>
